@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="shameApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Who-Plays-Shame-Nun-Game-Thrones.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dQm-hZ-k6b">
+                                <rect key="frame" x="180" y="28" width="240" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="YIp-ux-qUZ"/>
+                                    <constraint firstAttribute="height" constant="286" id="Ybe-mm-bnt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvL-j6-c2a">
+                                <rect key="frame" x="272" y="440" width="57" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="SHAME!"/>
+                                <connections>
+                                    <action selector="shameButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WnV-6b-Dpu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90815930503602671" blue="0.77741369811739625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dQm-hZ-k6b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="7rZ-qN-pRn"/>
+                            <constraint firstItem="WvL-j6-c2a" firstAttribute="top" secondItem="dQm-hZ-k6b" secondAttribute="bottom" constant="100" id="BwS-R7-rcZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WvL-j6-c2a" secondAttribute="trailing" constant="251" id="K2d-3C-BWU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WvL-j6-c2a" secondAttribute="bottom" constant="130" id="Vrj-pJ-iNA"/>
+                            <constraint firstItem="dQm-hZ-k6b" firstAttribute="centerX" secondItem="WvL-j6-c2a" secondAttribute="centerX" id="f5f-Ld-SO1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WvL-j6-c2a" secondAttribute="bottom" constant="130" id="hZg-IR-IHZ"/>
+                            <constraint firstItem="dQm-hZ-k6b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hiM-sA-91h"/>
+                            <constraint firstItem="WvL-j6-c2a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="252" id="iEK-JC-c7k"/>
+                            <constraint firstItem="WvL-j6-c2a" firstAttribute="top" secondItem="dQm-hZ-k6b" secondAttribute="bottom" constant="100" id="j2Z-EF-f5g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WvL-j6-c2a" secondAttribute="bottom" constant="130" id="keS-Es-qH2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BwS-R7-rcZ"/>
+                                <exclude reference="K2d-3C-BWU"/>
+                                <exclude reference="iEK-JC-c7k"/>
+                                <exclude reference="j2Z-EF-f5g"/>
+                                <exclude reference="Vrj-pJ-iNA"/>
+                                <exclude reference="hZg-IR-IHZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="shameButton" destination="WvL-j6-c2a" id="FKu-ci-ehD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Who-Plays-Shame-Nun-Game-Thrones.jpg" width="550" height="550"/>
+    </resources>
+</document>
