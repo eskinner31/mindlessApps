@@ -10,26 +10,37 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var myAudioPlayer = AVAudioPlayer()
 
     @IBOutlet weak var shameButton: UIButton!
+    
+    
+    @IBAction func shameButtonPress(sender: UIButton) -> Void {
+        myAudioPlayer.play();
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        let myFilePathString = NSBundle.mainBundle().pathForResource("shame_sfx", ofType: "mp3")
+        
+        if let myFilePathString = myFilePathString
+        {
+            let myFilePathURL = NSURL(fileURLWithPath: myFilePathString)
+            
+            do {
+                
+                try myAudioPlayer = AVAudioPlayer(contentsOfURL: myFilePathURL)
+            } catch {
+                print("error")
+            }
+            
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        }
     }
     
-    @IBAction func shameButtonPress(sender: UIButton) -> Void {
-        AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: "/resoures/shame_sfx.mp3")) throws {
-            throw ErrorType(self)
-        }
-        
-    }
+ 
 
 }
 

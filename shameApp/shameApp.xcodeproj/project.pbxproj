@@ -60,6 +60,7 @@
 		69AC8EF81D18D6EF00FCDA77 /* shameApp */ = {
 			isa = PBXGroup;
 			children = (
+				69AC8F111D18ECAE00FCDA77 /* shame_sfx.mp3 */,
 				69AC8F0E1D18E61800FCDA77 /* resources */,
 				69AC8EF91D18D6EF00FCDA77 /* AppDelegate.swift */,
 				69AC8EFB1D18D6EF00FCDA77 /* ViewController.swift */,
@@ -75,7 +76,6 @@
 		69AC8F0E1D18E61800FCDA77 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				69AC8F111D18ECAE00FCDA77 /* shame_sfx.mp3 */,
 				69AC8F0F1D18E66C00FCDA77 /* Who-Plays-Shame-Nun-Game-Thrones.jpg */,
 			);
 			name = resources;
@@ -307,6 +307,7 @@
 				69AC8F0D1D18D6EF00FCDA77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
